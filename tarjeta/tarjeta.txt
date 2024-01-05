@@ -1,0 +1,6 @@
+{
+  "Nombre": "Jose",
+  "Saldo": "2000",
+  "NumeroTarjeta": "1539887624",
+  "Contrasena": "12345"
+}

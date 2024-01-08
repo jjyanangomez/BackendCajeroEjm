@@ -4,7 +4,14 @@ const bodyParser = require('body-parser');
 
 const dataRoutes = require('./routes/dataRoutes');
 
+const corsOptions = {
+  origin: '*', // Reemplaza con tu dominio permitido
+  methods: 'GET, POST',
+  allowedHeaders: 'Content-Type, Authorization',
+};
+
 const app = express();
+app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
